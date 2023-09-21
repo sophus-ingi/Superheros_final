@@ -17,6 +17,7 @@ public class Database {
         this.heroliste = new ArrayList<>();
     }
 
+    //Add hero and stores it in database
     public void addHero(String name, String realName, String superPower, int yearCreated, String race, String strength) {
         Superhero superhero = new Superhero(name, realName, superPower, yearCreated, race, strength);
         heroliste.add(superhero);
@@ -25,6 +26,7 @@ public class Database {
     public void searchSuperhero(String partialName) {
         boolean found = false;
 
+        //Print out Hero list
         for (Superhero hero : heroliste) {
             if (hero.getName().toLowerCase().contains(partialName.toLowerCase())) {
                 System.out.println("Superhero name: " + hero.getName());
