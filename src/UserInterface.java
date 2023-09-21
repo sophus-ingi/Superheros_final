@@ -23,6 +23,7 @@ public class UserInterface {
             ------------------------------------------|
             """);
 
+            //Input info on hero and adds to database
             try {
                 int ansvar = scanner.nextInt();
                 if (ansvar == 1) {
